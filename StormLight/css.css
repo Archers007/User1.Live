@@ -1,0 +1,124 @@
+body {
+    /* set the background to start after the splashcontatin img */
+    background-position: 0px 400px;
+    background-color: #000000;
+    background-image: url("StormlightBG_website.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Flynn', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 100px;
+    /* make it so the background doesent go completely to the side */
+    margin: 0 5%
+  }
+  
+  .splash-container img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  h1 {
+    font-size: 48px;
+    color: #ffffff;
+    word-spacing: 10px;
+    font-family: 'Revamped', sans-serif;
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #00ffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    font-family: 'Revamped', sans-serif;
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #00ffff;
+    transition: 0.3s;
+  }
+  
+  
+  .black-strip {
+    left:0;
+    width: 100%;
+    background-color: #000000;
+    height: 20px;
+  }
+  .black-strip-thick {
+    width: 100%;
+    background-color: #000000;
+    height: 70px;
+    position: sticky;
+    top: 0px; /* Adjust this value as needed */
+    z-index: 999;
+  }
+
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+  }
+  
+  .product-box {
+    text-align: center;
+    background-color: rgba(244, 244, 244, 0.8);
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 65%; /* Set the desired width */
+;
+  }
+  
+  .product-box img {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+  }
+  
+  .product-box p {
+    margin-top: 0;
+    color:#000000;
+    flex-grow: 1; /* Allow the description to grow and wrap if needed */
+  }
+  .product-content p {
+    max-width: 300px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the paragraphs within the product box */
+    font-size: medium;
+    font-family: 'Revamped', sans-serif;
+  }
+  
+  
+  

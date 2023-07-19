@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Micklona', Arial, sans-serif;
+  background-image: url('misc/bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
+}
+
+header {
+  font-family: 'Micklona', Arial, sans-serif;
+  background-color: #000000;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  list-style: none;
+}
+
+.header-menu li {
+  margin: 0 10px;
+}
+
+.header-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s,transform 0.5s;
+}
+
+.header-menu li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.3);
+}
+
+
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@font-face {
+  font-family: 'Micklona';
+  src: url('misc/MOODERN.otf') format('opentype');
+}
+
+.intro h1 {
+	padding-top: 30px;
+  font-family: 'Micklona', Arial, sans-serif;
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
+.showcase {
+  text-align: center;
+}
+
+.showcase h2 {
+  padding: 20px;
+  letter-spacing: 2px;
+  font-family: 'Micklona', Arial, sans-serif;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.artwork-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  font-family: 'Micklona', Arial, sans-serif;
+  transition: transform 0.5s;
+}
+
+.artwork-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.artwork-item p {
+  padding-top: 10px;
+}
+
+.artwork-item:hover {
+  transform: scale(1.3);
+	background-color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  font-family: 'Micklona', Arial, sans-serif;
+	color: white;
+}
+
+.artwork-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup-container .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-container .full-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+.credits-bar {
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.credits-bar a {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.more-info-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.more-info-btn:hover {
+  background-color: gray;
+  color: white;
+}
+.about-me-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.about-me-image {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #000; /* Add a border for a better look */
+}
+
+.rounded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
