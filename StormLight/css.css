@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Flynn';
+  src: url('Flynn.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Revamped';
+  src: url('Revamped.otf') format('opentype');
+}
+
+
 body {
     /* set the background to start after the splashcontatin img */
     background-position: 0px 400px;
