@@ -8,6 +8,10 @@
   src: url('Revamped.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Cinzel';
+  src: url('Cinzel.otf') format('opentype');
+}
 
 body {
     /* set the background to start after the splashcontatin img */
@@ -128,7 +132,7 @@ body {
     max-width: 300px; /* Adjust the value as needed */
     margin: 0 auto; /* Center the paragraphs within the product box */
     font-size: medium;
-    font-family: 'Revamped', sans-serif;
+    font-family: 'Cinzel', sans-serif;
   }
   
   
