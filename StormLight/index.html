@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <title>User1</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+  <div class="black-strip"></div>
+  <div class="splash-container">
+    <img src="StormLight3.png" alt="User1 Splash">
+  </div>
+  <div class="black-strip-thick button-container">
+    <a class="button" href="/StormLight/#Products">Products</a>
+    <a class="button" href="/StormLight/#About">About</a>
+    <a class="button" href="/StormLight/#Support">Back It</a>
+  </div>
+    <div class="container" id="Products">
+      <h1>StormLight Products:</h1>
+      <div class="product-container">
+        <div class="product-box">
+          <div class="product-content">
+            <a href=""> 
+              <h2 style="color:brown; background-color: rgba(0,0,0,.8); border-radius: 10px; padding: 10px;">Dragonfruit:</h2>
+            </a>
+            <p>Unleash the beast within with our Dragonfruit Preworkout, a potent blend of exotic dragonfruit and performance-enhancing ingredients for a powerful surge of energy and focus during your workouts.</p>
+          </div>
+          <img src="C9.png" alt="Product 1">
+        </div>
+        <div class="product-box">
+          <img src="C9.png" alt="Product 2">
+          <div class="product-content">
+            <a href="">
+              <h2 style="color:cyan; background-color: rgba(0,0,0,.8); border-radius: 10px; padding: 10px;">Tropical Fruit Punch:</h2>
+            </a>
+            <p>Transport yourself to a tropical paradise with our Tropical Fruit Punch Preworkout, a refreshing mix of sun-soaked fruits like mangoes and pineapples, designed to fuel your workouts and keep you energized to conquer your fitness goals.</p>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="product-content">
+            <a href="">
+              <h2 style="color:lime; background-color: rgba(0,0,0,.8); border-radius: 10px; padding: 10px;">Kiwi Lime:</h2>
+            </a>
+            <p>Experience the invigorating fusion of tangy kiwis and zesty limes in our Kiwi Lime Preworkout, designed to awaken your senses and enhance your endurance and focus during your workouts. Embrace the power of nature and unlock your full potential with this refreshing preworkout blend.            </p>
+          </div>
+          <img src="C9.png" alt="Product 3">
+        </div>
+      </div>
+  </div>
+  <div class="container" id="About">
+    <div class="black-strip"></div>
+    <div class="about-container">
+      <h1>About StormLight:</h1>
+      <div id="tldr" class="about-container">
+        <p>TL;DR: StormLight is a newly launched preworkout company based in Canada, born out of a passion for fitness and a commitment to elevating the workout experience. Frustrated by the lackluster effects of mainstream supplements, we developed a high-density boost pre-workout formula to fuel intense workouts and maximize results. Our focus on quality, innovation, and customer satisfaction sets us on a mission to be a leading name in premium fitness supplements, empowering individuals to achieve their fitness goals and illuminating their fitness journey like never before.</p>
+      </div>
+
+      <script>
+        function more() {
+          document.getElementById("more").style.display = "inherit";
+          document.getElementById("morebtn").style.display = "none";
+          document.getElementById("tldr").style.display = "none";
+        }
+        function less() {
+          document.getElementById("more").style.display = "none";
+          document.getElementById("morebtn").style.display = "inherit";
+          document.getElementById("tldr").style.display = "inherit";
+        }
+      </script>
+      <div id="morebtn">
+        <a class="button" onclick="more()">More</a>
+      </div>
+      <div id="more" style="display: none;" class="about-container">
+        <p>StormLight, a newly established preworkout company based in Canada, is driven by a passion for fitness and a vision to make a significant impact in the health supplement industry. As fitness enthusiasts ourselves, we noticed that many mainstream pre-workout supplements were falling short of providing the desired pump and effects during intense workouts.</p>
+        <p>Fueled by our determination to address this issue, we set out to create our very own high-density boost pre-workout formula. Countless hours of research, development, and meticulous testing have gone into crafting a product that promises to elevate the workout experience and maximize results.</p>
+        <p>As a small company just starting out, we are fully aware of the challenges ahead, but we are unwavering in our commitment to excellence. We are dedicated to offering only the highest quality products to our customers, ensuring that each ingredient is carefully selected and scientifically backed to deliver optimal performance benefits.</p>
+        <p>Our mission extends beyond just selling preworkout supplements. We want to be a driving force in promoting health and fitness, empowering individuals to reach their peak potential and surpass their fitness goals. As we continue to grow, we envision StormLight becoming a recognized name synonymous with premium fitness supplements in Canada and beyond.</p>        
+        <p>Through relentless innovation and a genuine focus on customer satisfaction, we aim to establish long-lasting relationships with our valued customers. We invite fitness enthusiasts and athletes alike to join us on this exciting journey as we set new standards and redefine the world of preworkout supplementation. Together, let's harness the power of StormLight to illuminate your fitness journey like never before.</p>        
+        <div id="lessbtn">
+          <a class="button" onclick="less()">Less</a>
+        </div>
+      </div>
+    </div>
+  
+</body>
+</html>
