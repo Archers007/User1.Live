@@ -156,3 +156,48 @@ body {
     justify-content: center;
     text-align: center;
   }
+
+  /* #Formula{
+    display: flex;
+    font-size: 15pt;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 200px;
+    border-radius: 10px;;
+    text-align: center;
+  }
+
+  #Formula li{
+    font-size: 24px;
+    font-family: 'Cinzel', sans-serif;
+    width: 50%;
+    justify-content: center;
+    text-align: left;
+  } */
+
+  .formula-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 200px;
+    border-radius: 10px;
+    font-size: 20pt;
+    font-family: 'Cinzel', sans-serif;
+  }
+
+  .formula-container li{
+    font-size: 25pt;
+    font-family: 'Cinzel', sans-serif;
+    justify-content: center;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .formula-container ul{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 50px 100px;
+  }
